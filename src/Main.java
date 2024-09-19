@@ -30,9 +30,11 @@ public class Main {
         System.out.println("Такая OS  не поддерживается ");
     }
     System.out.println(" Задача 3");
-    //int ferstVisokosYear =1584;
-    int year = 1584;
-    if (year % 4 != 0) {
+    int ferstVisokosYear = 1584;
+    int year = 2021;
+    if (year < ferstVisokosYear) {
+      System.out.println("Система исчисления високосности ещё не применялась");
+    } else if (year % 4 != 0) {
       System.out.println(" не високосный год не делится на 4");
     } else if (year % 400 == 0) {
       System.out.println(" високосный год (делится на 400)");
@@ -43,10 +45,25 @@ public class Main {
       System.out.println(
           " високосный (не делится на 100, но делится на 4)");
     }
+    System.out.println(" Задача 4");
+    int deliveryDistance = 95;
+    int delyveryTimes = 1;
+    if (deliveryDistance < 20) {
+      System.out.println("Срок доставки : " + delyveryTimes + " день");
+    } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
+      System.out.println("Срок доставки : " + (delyveryTimes + 1) + " дня");
+    } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
+      System.out.println("Срок доставки : " + (delyveryTimes + 2) + " дня");
+    } else {
+      System.out.println("извините, доставка не осуществляется");
+    }
+
+
 
 
 
 
   }
 }
+
 
