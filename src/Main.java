@@ -31,7 +31,7 @@ public class Main {
     }
     System.out.println(" Задача 3");
     //int ferstVisokosYear =1584;
-    int year = 1993;
+    int year = 1584;
     if (year % 4 != 0) {
       System.out.println(" не високосный год не делится на 4");
     } else if (year % 400 == 0) {
@@ -43,6 +43,10 @@ public class Main {
       System.out.println(
           " високосный (не делится на 100, но делится на 4)");
     }
+
+
+
+
   }
 }
 
